@@ -1,12 +1,12 @@
 import React from 'react';
-import { Provider } from 'react-redux'
-import store from './store'
-import Catalog from './components/Catalog'
+import { Provider } from 'react-redux';
+import store from './store';
+import Catalog from './components/Catalog';
 
-function App() {
+function App(): React.ReactElement {
   return (
     <Provider store={store}>
-     <Catalog/>
+      <Catalog />
     </Provider>
   );
 }
